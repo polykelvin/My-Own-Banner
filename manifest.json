@@ -1,0 +1,17 @@
+{
+  "name": "Bilibili Blocker",
+  "version": "1.1",
+  "manifest_version": 3,
+  "description": "A Chrome extension that blocks ads and removes video cards from bilibili.com",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.bilibili.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}
